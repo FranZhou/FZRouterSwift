@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FZRouter_Example' do
+  pod 'FZRouter', :path => '../'
+
+  target 'FZRouter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

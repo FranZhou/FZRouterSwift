@@ -1,0 +1,16 @@
+PODS:
+  - FZRouter (0.1.0)
+
+DEPENDENCIES:
+  - FZRouter (from `../`)
+
+EXTERNAL SOURCES:
+  FZRouter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FZRouter: 2e1d79c99cb43c75e21aa477d66598fd5a31d0b4
+
+PODFILE CHECKSUM: adcd5ed8e48155c5bca1e9998eea41a86b40812d
+
+COCOAPODS: 1.9.0.beta.2
