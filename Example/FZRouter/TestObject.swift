@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class TestObject {
+public class TestObject: CustomStringConvertible {
 
     var a: String
 
@@ -27,4 +27,9 @@ public class TestObject {
         self.b = b
         self.c = c
     }
+
+    public var description: String {
+        return "TestObject[a = \(a), b = \(b), c = \(c)]"
+    }
+
 }

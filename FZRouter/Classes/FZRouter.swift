@@ -87,13 +87,13 @@ extension FZRouter {
     }
 
     @discardableResult
-    @objc func exchange(withRouterURL url: String, target: AnyObject, selector: Selector) -> FZRouterModelProtocol? {
-        return routerManager.exchange(withRouterURL: url, target: target, selector: selector)
+    @objc public func updateOrSave(withRouterURL url: String, target: AnyObject, selector: Selector) -> FZRouterModelProtocol? {
+        return routerManager.updateOrSave(withRouterURL: url, target: target, selector: selector)
     }
 
     @discardableResult
-    @objc func exchange(withRouterURL url: String, targetActionBlock: @escaping FZRouterModelProtocol.FZRouterModelTargetActionBlock) -> FZRouterModelProtocol? {
-        return routerManager.exchange(withRouterURL: url, targetActionBlock: targetActionBlock)
+    @objc public func updateOrSave(withRouterURL url: String, targetActionBlock: @escaping FZRouterModelProtocol.FZRouterModelTargetActionBlock) -> FZRouterModelProtocol? {
+        return routerManager.updateOrSave(withRouterURL: url, targetActionBlock: targetActionBlock)
     }
 
 }

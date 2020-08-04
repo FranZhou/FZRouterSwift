@@ -38,20 +38,20 @@ import Foundation
     /// get all router
     @objc func allRouters() -> [FZRouterModelProtocol]?
 
-    /// exchange target and selector for router url
+    /// updateOrSave target and selector for router url
     ///
     /// - Parameters:
     ///   - url: router url
     ///   - target: target
     ///   - selector: selector
     ///   - Returns: FZRouterModelProtocol
-    @objc func exchange(withRouterURL url: String, target: AnyObject, selector: Selector) -> FZRouterModelProtocol?
+    @objc func updateOrSave(withRouterURL url: String, target: AnyObject, selector: Selector) -> FZRouterModelProtocol?
 
-    /// exchange targetActionBlock for router url
+    /// updateOrSave targetActionBlock for router url
     ///
     /// - Parameters:
     ///   - url: router url
     ///   - targetActionBlock: argetActionBlock
     ///   - Returns: FZRouterModelProtocol
-    @objc func exchange(withRouterURL url: String, targetActionBlock: @escaping FZRouterModelProtocol.FZRouterModelTargetActionBlock) -> FZRouterModelProtocol?
+    @objc func updateOrSave(withRouterURL url: String, targetActionBlock: @escaping FZRouterModelProtocol.FZRouterModelTargetActionBlock) -> FZRouterModelProtocol?
 }

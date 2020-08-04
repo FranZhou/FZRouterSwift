@@ -68,7 +68,7 @@ extension FZDefaultURLRouterPlistLoader: FZRouterLoaderProtocol {
                                         // target
                                         if let targetActionDic = targetAction as? NSDictionary,
                                             let targetName = targetActionDic.object(forKey: "target") as? String,
-                                            let targetObject = target(forName: targetName),
+                                            let targetObject = self.target(forName: targetName),
                                             let actionDic = dictionary(forKey: "actions", in: targetActionDic) {
 
                                             // action

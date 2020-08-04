@@ -56,7 +56,7 @@ extension FZDefaultURLRouterManager: FZRouterManagerProtocol {
         })
     }
 
-    public func exchange(withRouterURL url: String, target: AnyObject, selector: Selector) -> FZRouterModelProtocol? {
+    public func updateOrSave(withRouterURL url: String, target: AnyObject, selector: Selector) -> FZRouterModelProtocol? {
         if let routerKey = FZDefaultURLRouterUtil.key(withRouterURL: url) {
             if let routerModel = routerMapper[routerKey] {
                 routerModel.target = target
@@ -74,7 +74,7 @@ extension FZDefaultURLRouterManager: FZRouterManagerProtocol {
         return nil
     }
 
-    public func exchange(withRouterURL url: String, targetActionBlock: @escaping (FZRouterDataPacketProtocol) -> Void) -> FZRouterModelProtocol? {
+    public func updateOrSave(withRouterURL url: String, targetActionBlock: @escaping (FZRouterDataPacketProtocol) -> Void) -> FZRouterModelProtocol? {
         if let routerKey = FZDefaultURLRouterUtil.key(withRouterURL: url) {
             if let routerModel = routerMapper[routerKey] {
                 routerModel.targetActionBlock = targetActionBlock

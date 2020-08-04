@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1D25920C24D9174800832FA4 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D25920B24D9174800832FA4 /* TestObject.swift */; };
+		1D25920E24D930E900832FA4 /* FZRouterDemo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D25920D24D930E900832FA4 /* FZRouterDemo.plist */; };
+		1D25921024D931A400832FA4 /* Target_RouterDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D25920F24D931A400832FA4 /* Target_RouterDemo.swift */; };
+		1D25921424D9329700832FA4 /* Target_OCRouterDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D25921324D9329700832FA4 /* Target_OCRouterDemo.m */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -30,6 +33,11 @@
 
 /* Begin PBXFileReference section */
 		1D25920B24D9174800832FA4 /* TestObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObject.swift; sourceTree = "<group>"; };
+		1D25920D24D930E900832FA4 /* FZRouterDemo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FZRouterDemo.plist; sourceTree = "<group>"; };
+		1D25920F24D931A400832FA4 /* Target_RouterDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target_RouterDemo.swift; sourceTree = "<group>"; };
+		1D25921124D9329700832FA4 /* FZRouter_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FZRouter_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		1D25921224D9329700832FA4 /* Target_OCRouterDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_OCRouterDemo.h; sourceTree = "<group>"; };
+		1D25921324D9329700832FA4 /* Target_OCRouterDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_OCRouterDemo.m; sourceTree = "<group>"; };
 		41C395EB68E3C45C6BA2037D /* FZRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FZRouter.podspec; path = ../FZRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4232C756C0BCB515647CF38C /* Pods-FZRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FZRouter_Tests.release.xcconfig"; path = "Target Support Files/Pods-FZRouter_Tests/Pods-FZRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* FZRouter_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FZRouter_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,10 +117,15 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				1D25920B24D9174800832FA4 /* TestObject.swift */,
+				1D25920F24D931A400832FA4 /* Target_RouterDemo.swift */,
+				1D25921224D9329700832FA4 /* Target_OCRouterDemo.h */,
+				1D25921324D9329700832FA4 /* Target_OCRouterDemo.m */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				1D25920D24D930E900832FA4 /* FZRouterDemo.plist */,
+				1D25921124D9329700832FA4 /* FZRouter_Example-Bridging-Header.h */,
 			);
 			name = "Example for FZRouter";
 			path = FZRouter;
@@ -215,7 +228,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1160;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -251,6 +264,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				1D25920E24D930E900832FA4 /* FZRouterDemo.plist in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,8 +348,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D25921424D9329700832FA4 /* Target_OCRouterDemo.m in Sources */,
 				1D25920C24D9174800832FA4 /* TestObject.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				1D25921024D931A400832FA4 /* Target_RouterDemo.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,11 +498,14 @@
 			baseConfigurationReference = 9841B1D0BED9B2E3899B81A7 /* Pods-FZRouter_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FZRouter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FZRouter/FZRouter_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -497,11 +516,13 @@
 			baseConfigurationReference = 720E5B25F0700C9862216EC6 /* Pods-FZRouter_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FZRouter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FZRouter/FZRouter_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
