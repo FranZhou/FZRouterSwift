@@ -4,17 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FZRouter.xcscheme</key>
+		<key>FZRouterSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-FZRouter_Example.xcscheme</key>
+		<key>Pods-FZRouterSwift_Example.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-FZRouter_Tests.xcscheme</key>
+		<key>Pods-FZRouterSwift_Tests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

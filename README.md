@@ -1,23 +1,24 @@
-# FZRouter
+# FZRouterSwift
 
 <!--
-[![CI Status](https://img.shields.io/travis/FranZhou/FZRouter.svg?style=flat)](https://travis-ci.org/FranZhou/FZRouter)
-[![Version](https://img.shields.io/cocoapods/v/FZRouter.svg?style=flat)](https://cocoapods.org/pods/FZRouter)
-[![License](https://img.shields.io/cocoapods/l/FZRouter.svg?style=flat)](https://cocoapods.org/pods/FZRouter)
-[![Platform](https://img.shields.io/cocoapods/p/FZRouter.svg?style=flat)](https://cocoapods.org/pods/FZRouter)
+[![CI Status](https://img.shields.io/travis/FranZhou/FZRouterSwift.svg?style=flat)](https://travis-ci.org/FranZhou/FZRouterSwift)
+[![Version](https://img.shields.io/cocoapods/v/FZRouterSwift.svg?style=flat)](https://cocoapods.org/pods/FZRouterSwift)
+[![License](https://img.shields.io/cocoapods/l/FZRouterSwift.svg?style=flat)](https://cocoapods.org/pods/FZRouterSwift)
+[![Platform](https://img.shields.io/cocoapods/p/FZRouterSwift.svg?style=flat)](https://cocoapods.org/pods/FZRouterSwift)
 -->
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+
 ## Installation
 
-FZRouter is available through [CocoaPods](https://cocoapods.org). To install
+FZRouterSwift is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'FZRouter'
+pod 'FZRouterSwift'
 ```
 
 ## Directions for use
@@ -139,10 +140,11 @@ if let result = try? FZRouter.defaultRouter.router(withRouterURL: "fran://www.fr
 
 You can consult FZDefaultURLRouter to implement your own routing parser.
 
+
 ## Author
 
 FranZhou, fairytale_zf@outlook.com
 
 ## License
 
-FZRouter is available under the MIT license. See the LICENSE file for more info.
+FZRouterSwift is available under the MIT license. See the LICENSE file for more info.

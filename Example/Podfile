@@ -1,9 +1,9 @@
 use_frameworks!
 
-target 'FZRouter_Example' do
-  pod 'FZRouter', :path => '../'
+target 'FZRouterSwift_Example' do
+  pod 'FZRouterSwift', :path => '../'
 
-  target 'FZRouter_Tests' do
+  target 'FZRouterSwift_Tests' do
     inherit! :search_paths
 
     

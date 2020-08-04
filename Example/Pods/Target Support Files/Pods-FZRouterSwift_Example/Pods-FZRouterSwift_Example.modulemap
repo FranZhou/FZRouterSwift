@@ -1,0 +1,6 @@
+framework module Pods_FZRouterSwift_Example {
+  umbrella header "Pods-FZRouterSwift_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

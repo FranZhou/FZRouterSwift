@@ -1,16 +1,16 @@
 PODS:
-  - FZRouter (0.1.0)
+  - FZRouterSwift (0.1.0)
 
 DEPENDENCIES:
-  - FZRouter (from `../`)
+  - FZRouterSwift (from `../`)
 
 EXTERNAL SOURCES:
-  FZRouter:
+  FZRouterSwift:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FZRouter: 9761050c0acdfa6a16a69ae29b3493161c81d582
+  FZRouterSwift: a45b949d971f9af755ddc0ba9ad0c27a2ecd2d68
 
-PODFILE CHECKSUM: adcd5ed8e48155c5bca1e9998eea41a86b40812d
+PODFILE CHECKSUM: 668907e79185590566c022a002d9347b48ba2862
 
 COCOAPODS: 1.9.0.beta.2
