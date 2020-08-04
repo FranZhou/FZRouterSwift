@@ -143,7 +143,8 @@ You can consult FZDefaultURLRouter to implement your own routing parser.
 
 ## Author
 
-FranZhou, fairytale_zf@outlook.com
+FranZhou, fairytale_zf@outlook.com<br/>
+swift QQ交流群: 628172981
 
 ## License
 
