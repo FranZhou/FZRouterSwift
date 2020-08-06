@@ -1,11 +1,11 @@
 # FZRouterSwift
 
-<!--
+
 [![CI Status](https://img.shields.io/travis/FranZhou/FZRouterSwift.svg?style=flat)](https://travis-ci.org/FranZhou/FZRouterSwift)
 [![Version](https://img.shields.io/cocoapods/v/FZRouterSwift.svg?style=flat)](https://cocoapods.org/pods/FZRouterSwift)
 [![License](https://img.shields.io/cocoapods/l/FZRouterSwift.svg?style=flat)](https://cocoapods.org/pods/FZRouterSwift)
 [![Platform](https://img.shields.io/cocoapods/p/FZRouterSwift.svg?style=flat)](https://cocoapods.org/pods/FZRouterSwift)
--->
+
 
 ## Example
 
