@@ -13,6 +13,7 @@ open class FZDefaultURLRouterPlistLoader: NSObject {
 
 }
 
+// MARK: - FZRouterLoaderProtocol
 extension FZDefaultURLRouterPlistLoader: FZRouterLoaderProtocol {
 
     public func loadRouter(withFilePath filePath: String, router: FZRouter) {
@@ -46,6 +47,7 @@ extension FZDefaultURLRouterPlistLoader: FZRouterLoaderProtocol {
     }
 }
 
+// MARK: - fileprivate
 extension FZDefaultURLRouterPlistLoader {
 
     /// 加载通过plist导入的路由
@@ -142,6 +144,7 @@ extension FZDefaultURLRouterPlistLoader {
 
 }
 
+// MARK: - internal
 extension FZDefaultURLRouterPlistLoader {
 
     internal func dictionary(forKey key: Any, in dictionary: NSDictionary) -> NSDictionary? {
