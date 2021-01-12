@@ -14,8 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
+
         if let filePath = Bundle.main.path(forResource: "FZRouterSwiftDemo", ofType: "plist") {
             FZRouter.defaultRouter.loadRouter(withFilePath: filePath)
         }
@@ -50,7 +49,7 @@ class ViewController: UIViewController {
                 returnValue()
             }
         }
-        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,4 +58,3 @@ class ViewController: UIViewController {
     }
 
 }
-

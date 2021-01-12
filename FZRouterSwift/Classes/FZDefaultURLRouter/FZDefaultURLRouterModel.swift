@@ -14,12 +14,11 @@ open class FZDefaultURLRouterModel: NSObject, FZRouterModelProtocol {
     public var target: AnyObject?
     public var selector: Selector?
     public var targetActionBlock: FZRouterModelTargetActionBlock?
-    
+
     // lazy load
     internal var isLoad = false
     internal var targetName: String?
 
-    
     /// FZRouterModel
     ///
     /// - Parameters:
@@ -34,7 +33,7 @@ open class FZDefaultURLRouterModel: NSObject, FZRouterModelProtocol {
         self.target = nil
         self.targetActionBlock = nil
         super.init()
-        
+
     }
 
     /// FZRouterModel

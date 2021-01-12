@@ -29,11 +29,10 @@ import Foundation
 
 }
 
-
-// MARK:- default implementation
+// MARK: - default implementation
 extension FZRouterExecuterProtocol {
-    
-    func couldExecute(withRouterURL url: String, router: FZRouter) -> FZRouterModelProtocol? {
+
+    public func couldExecute(withRouterURL url: String, router: FZRouter) -> FZRouterModelProtocol? {
         let manager = router.routerManager
 
         // get routerkey from url. then get routerModel
@@ -43,8 +42,8 @@ extension FZRouterExecuterProtocol {
         }
         return routerModel
     }
-    
-    func passingParameters(withRouterURL url: String, extra parameters: [String: Any]?, routerModel: FZRouterModelProtocol, router: FZRouter) -> [String: Any]? {
+
+    public func passingParameters(withRouterURL url: String, extra parameters: [String: Any]?, routerModel: FZRouterModelProtocol, router: FZRouter) -> [String: Any]? {
 
         // get parameters from url
         var totalParameters: [String: Any] = [:]
@@ -58,5 +57,5 @@ extension FZRouterExecuterProtocol {
 
         return totalParameters
     }
-    
+
 }

@@ -25,9 +25,9 @@ extension FZDefaultURLRouterExecuter: FZRouterExecuterProtocol {
             else {
                 return nil
         }
-        
+
         if let routerModel = routerModel as? FZDefaultURLRouterModel,
-           !routerModel.isLoad{
+           !routerModel.isLoad {
             // load routerModel
             FZDefaultURLRouterPlistLoader.defaultLoader.load(routerModel: routerModel)
         }

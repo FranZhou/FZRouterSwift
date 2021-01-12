@@ -35,11 +35,11 @@ extension FZDefaultURLRouterPlistLoader {
         let selectorName = action + ":"
         return NSSelectorFromString(selectorName)
     }
-    
-    internal func load(routerModel: FZDefaultURLRouterModel){
+
+    internal func load(routerModel: FZDefaultURLRouterModel) {
         if !routerModel.isLoad,
            let targetName = routerModel.targetName,
-           let targetObject = self.target(forName: targetName){
+           let targetObject = self.target(forName: targetName) {
             routerModel.target = targetObject
         }
         routerModel.isLoad = true
@@ -88,7 +88,7 @@ extension FZDefaultURLRouterPlistLoader: FZRouterLoaderProtocol {
                                                     let selector = self.action(forName: actionValue)
 
                                                     // routerKey target selector
-                                                    if let routerKey = FZDefaultURLRouterUtil.key(withRouterURL: routerURL){
+                                                    if let routerKey = FZDefaultURLRouterUtil.key(withRouterURL: routerURL) {
 
                                                         let routerModel = FZDefaultURLRouterModel(routerKey: routerKey, targetName: targetName, selector: selector)
 
