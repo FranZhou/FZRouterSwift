@@ -15,15 +15,15 @@ open class FZDefaultURLRouterPlistLoader: NSObject {
 
 extension FZDefaultURLRouterPlistLoader {
 
-    fileprivate func dictionary(forKey key: Any, in dictionary: NSDictionary) -> NSDictionary? {
+    internal func dictionary(forKey key: Any, in dictionary: NSDictionary) -> NSDictionary? {
         return dictionary.object(forKey: key) as? NSDictionary
     }
 
-    fileprivate func array(forKey key: Any, in dictionary: NSDictionary) -> NSArray? {
+    internal func array(forKey key: Any, in dictionary: NSDictionary) -> NSArray? {
         return dictionary.object(forKey: key) as? NSArray
     }
 
-    fileprivate func target(forName target: String) -> AnyClass? {
+    internal func target(forName target: String) -> AnyClass? {
         if target.count > 0 {
             let targetName = "Target_\(target.first?.uppercased() ?? "")\(target.dropFirst())"
             return NSClassFromString(targetName)
@@ -31,9 +31,18 @@ extension FZDefaultURLRouterPlistLoader {
         return nil
     }
 
-    fileprivate func action(forName action: String) -> Selector {
+    internal func action(forName action: String) -> Selector {
         let selectorName = action + ":"
         return NSSelectorFromString(selectorName)
+    }
+    
+    internal func load(routerModel: FZDefaultURLRouterModel){
+        if !routerModel.isLoad,
+           let targetName = routerModel.targetName,
+           let targetObject = self.target(forName: targetName){
+            routerModel.target = targetObject
+        }
+        routerModel.isLoad = true
     }
 }
 
@@ -68,7 +77,6 @@ extension FZDefaultURLRouterPlistLoader: FZRouterLoaderProtocol {
                                         // target
                                         if let targetActionDic = targetAction as? NSDictionary,
                                             let targetName = targetActionDic.object(forKey: "target") as? String,
-                                            let targetObject = self.target(forName: targetName),
                                             let actionDic = dictionary(forKey: "actions", in: targetActionDic) {
 
                                             // action
@@ -77,14 +85,12 @@ extension FZDefaultURLRouterPlistLoader: FZRouterLoaderProtocol {
                                                     let actionValue = action.value as? String {
 
                                                     let routerURL = "\(scheme)://\(host)/\(serverPath)/\(actionKey)"
-
                                                     let selector = self.action(forName: actionValue)
 
                                                     // routerKey target selector
-                                                    if let routerKey = FZDefaultURLRouterUtil.key(withRouterURL: routerURL),
-                                                        (targetObject as AnyObject).responds(to: selector) {
+                                                    if let routerKey = FZDefaultURLRouterUtil.key(withRouterURL: routerURL){
 
-                                                        let routerModel = FZDefaultURLRouterModel(routerKey: routerKey, target: targetObject, selector: selector)
+                                                        let routerModel = FZDefaultURLRouterModel(routerKey: routerKey, targetName: targetName, selector: selector)
 
                                                         if routerModelArray == nil {
                                                             routerModelArray = []
